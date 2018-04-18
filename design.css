@@ -2,9 +2,14 @@
     font-family: 'ProximaNovaCondensed';
     src: url('ProximaNovaCond-Regular.woff') format('woff');
 }
+
 @font-face {
     font-family: 'ProximaNovaCondensedBold';
     src: url('ProximaNovaCond-Bold.woff') format('woff');
+}
+
+body {
+    margin: 0;
 }
 
 .wrapper {
@@ -20,12 +25,139 @@
 }
 
 .cover {
-    background: #000;
+    background-image: url(i/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 454px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
 }
+
+.cover_bottom {
+    background-image: url(i/cover-bottom.jpg);
+    height: 559px;
+}
+
+.cover-helper {
+    background-image: url(i/quote.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: 223px 41px;
+    height: 559px;
+    position: relative;
+}
+
+.cover-helper::after {
+    background-image: url(i/quote.png);
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: -58px;
+    bottom: 0;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 223px 41px;
+    width: 223px;
+    height: 41px;
+}
+
 .cover-header {
     font-family: ProximaNovaCondensedBold, Arial, sans-serif;
     font-size: 60px;
-    color: #fff;
-    text-align: center;
     line-height: 1.16;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.cover-header_bottom {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.cover-description {
+    font-size: 18px;
+}
+
+.cover-description-text {
+    margin: 0;
+}
+
+.cover-description-text_bottom2 {
+    padding-top: 90px;
+}
+
+.cover-action {
+    padding-top: 40px;
+}
+
+.button-main {
+    color: #fff;
+    background-color: #0f8fee;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    border-width: 0;
+
+    text-decoration: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button-main:hover {
+    background: #3fafff;
+}
+
+.button-main:active {
+    background: #005fbe;
+
+}
+
+.header-2 {
+    font-size: 36px;
+    text-align: center;
+    font-family: ProximaNovaCondensed, sans-serif;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.main-text {
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+.content-why-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.content-why-item {
+    flex-grow: 1;
+    max-width: 250px;
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    padding-top: 130px;
+}
+
+.content-why-item_professions {
+    background-image: url(i/professions.svg);
+}
+
+.content-why-item_recommendations {
+    background-image: url(i/recommendations.svg);
+}
+
+.content-why-item_report {
+    background-image: url(i/report.svg);
 }
