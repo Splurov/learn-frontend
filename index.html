@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Learn Frontend</title>
+    <link rel="stylesheet" href="grid.css"/>
     <link rel="stylesheet" href="design.css"/>
 </head>
 <body>
 <div class="wrapper">
     <div class="navi">
-        <div class="header">
-            <img src="i/logo.svg" alt="hh.ru"/>
+        <header class="header">
+            <img src="i/logo.svg" class="header-logo" alt="hh.ru"/>
 
             <form class="vacancy-search">
-                <input type="text" class="vacancy-search-name"/>
+                <div class="vacancy-search-input">
+                    <input type="text" class="input" placeholder="Я ищу..."/>
+                </div>
 
-                <select class="vacancy-search-type">
+                <select class="select">
                     <option>Вакансии</option>
                     <option>Резюме</option>
                     <option>Компании</option>
                 </select>
 
-                <button type="submit" class="button-main">Найти</button>
+                <div class="vacancy-search-button">
+                    <button type="submit" class="button-main button-main_search">Найти</button>
+                </div>
 
                 <div class="vacancy-search-advanced">
                     <a href="" class="header-link">Расширенный поиск</a>
@@ -34,7 +39,7 @@
             <div class="locale">
                 <button type="button" class="locale-switcher">Сменить язык</button>
             </div>
-        </div>
+        </header>
         <div class="menu">
             <a href="" class="menu-item">Ищу работу</a>
             <a href="" class="menu-item">Ищу сотрудников</a>
@@ -65,32 +70,55 @@
 
     <div class="wrapper">
         <div class="content-why">
-            <h2 class="header-2">Для чего нужен тест</h2>
-            <p class="main-text">Он помогает ответить на простой вопрос:
-                «В какой профессии я смогу добиться максимального успеха?».
-                «Профориентация» исследует ваши личностные и профессиональные особенности
-                и после прохождения выдает результат:</p>
+            <div class="row">
+                <div class="column column_2"></div>
+                <div class="column column_12">
+                    <h2 class="header-2">Для чего нужен тест</h2>
+                    <p class="main-text">Он помогает ответить на простой вопрос:
+                        «В какой профессии я смогу добиться максимального успеха?».
+                        «Профориентация» исследует ваши личностные и профессиональные особенности
+                        и после прохождения выдает результат:</p>
+                </div>
+                <div class="column column_2"></div>
+            </div>
 
-            <div class="content-why-items">
-                <div class="content-why-item content-why-item_professions">
-                    Список из 15 профессий, подходящих именно вам
+            <div class="row">
+                <div class="column column_1"></div>
+                <div class="column column_4">
+                    <div class="content-why-item content-why-item_professions">
+                        Список из 15 профессий, подходящих именно вам
+                    </div>
                 </div>
-                <div class="content-why-item content-why-item_recommendations">
-                    Рекомендации по развитию ваших деловых качеств и компетенций.
+                <div class="column column_1"></div>
+                <div class="column column_4">
+                    <div class="content-why-item content-why-item_recommendations">
+                        Рекомендации по развитию ваших деловых качеств и компетенций.
+                    </div>
                 </div>
-                <div class="content-why-item content-why-item_report">
-                    Подробный отчет, который можно прикрепить к резюме
+                <div class="column column_1"></div>
+                <div class="column column_4">
+                    <div class="content-why-item content-why-item_report">
+                        Подробный отчет, который можно прикрепить к резюме
+                    </div>
                 </div>
+                <div class="column column_1"></div>
             </div>
         </div>
 
         <div class="content-results">
-            <h2 class="header-2">Результаты тестирования</h2>
-            <p class="main-text">В финале вы получите подробный документ с итогами тестирования,
-                содержащий более 11 листов графиков и текстовых рекомендаций.</p>
+            <div class="row">
+                <div class="column column_2"></div>
+                <div class="column column_12">
+                    <h2 class="header-2">Результаты тестирования</h2>
+                    <p class="main-text">В финале вы получите подробный документ с итогами тестирования,
+                        содержащий более 11 листов графиков и текстовых рекомендаций.</p>
+                </div>
+                <div class="column column_2"></div>
+            </div>
 
-            <div class="content-results-items">
-                <div class="content-results-item">
+            <div class="row">
+                <div class="column column_2"></div>
+                <div class="column column_9">
                     <div class="content-results-substrate content-results-substrate_left">
                         <ul class="professions-list">
                             <li>Медицинский представитель</li>
@@ -111,38 +139,42 @@
                             <li>Pre-sale менеджер</li>
                         </ul>
                     </div>
-                    <div class="content-results-description content-results-description_right">
-                        <h3 class="header-3">Рекомендованные професси</h3>
-                        <p class="content-results-description-content">
-                            Сервис проанализирует ваши интересы, склад мышления и личностные особенности,
-                            сопоставит их с требованиями к профессиям современного рынка труда
-                            и даст только рекомендованные для вас профессии.
-                        </p>
-                    </div>
                 </div>
-
-                <div class="content-results-item">
-                    <div class="content-results-substrate content-results-substrate_right">
-                    </div>
-                    <div class="content-results-description content-results-description_left">
-                        <h3 class="header-3">Вектор карьеры</h3>
-                        <p class="content-results-description-content">
-                            В отчете вы сможете найти ответ на вопрос о стиле работы и среде,
-                            которые подойдут для вас для наилучшей реализации вашего потенциала. </p>
-                    </div>
+                <div class="column column_3">
+                    <h3 class="header-3">Рекомендованные професси</h3>
+                    <p class="content-results-description-content">
+                        Сервис проанализирует ваши интересы, склад мышления и личностные особенности,
+                        сопоставит их с требованиями к профессиям современного рынка труда
+                        и даст только рекомендованные для вас профессии.
+                    </p>
                 </div>
+                <div class="column column_2"></div>
+            </div>
 
-                <div class="content-results-item">
-                    <div class="content-results-substrate content-results-substrate_left">
-
-                    </div>
-                    <div class="content-results-description content-results-description_right">
-                        <h3 class="header-3">Свойственные роли</h3>
-                        <p class="content-results-description-content">
-                            Из этой части отчета вы узнаете, какой тип деятельности вам лучше всего удается,
-                            а что потребует от вас дополнительных усилий. </p>
-                    </div>
+            <div class="row">
+                <div class="column column_2"></div>
+                <div class="column column_3"><h3 class="header-3">Вектор карьеры</h3>
+                    <p class="content-results-description-content">
+                        В отчете вы сможете найти ответ на вопрос о стиле работы и среде,
+                        которые подойдут для вас для наилучшей реализации вашего потенциала. </p></div>
+                <div class="column column_9">
+                    <img src="i/pie-chart.png" alt="Вектор карьеры"/>
                 </div>
+                <div class="column column_2"></div>
+            </div>
+
+            <div class="row">
+                <div class="column column_2"></div>
+                <div class="column column_9">
+                    <img src="i/bar-chart.png" alt="Свойственные роли"/>
+                </div>
+                <div class="column column_3">
+                    <h3 class="header-3">Свойственные роли</h3>
+                    <p class="content-results-description-content">
+                        Из этой части отчета вы узнаете, какой тип деятельности вам лучше всего удается,
+                        а что потребует от вас дополнительных усилий. </p>
+                </div>
+                <div class="column column_2"></div>
             </div>
         </div>
     </div>
@@ -171,62 +203,76 @@
 
     <div class="wrapper">
         <div class="content-responses">
-            <h2 class="header-2">Отзывы наших клиентов</h2>
-
-            <div class="content-responses-items">
-                <div class="response-item">
-                    <div class="response-item-quote">«Очень реалистичный результат и достаточно интересные рекомендации.
-                        В целом сервис полезный, очень правильная идея, и, судя по результатам, 40 минут были потрачены
-                        мной не напрасно. Спасибо и удачи вам в дальнейшем совершенствовании сервиса!» 
-                    </div>
-                    <div class="response-item-name">Надежда К.</div>
+            <div class="row">
+                <div class="column column_2"></div>
+                <div class="column column_12">
+                    <h2 class="header-2">Отзывы наших клиентов</h2>
                 </div>
-
-                <div class="response-item">
-                    <div class="response-item-quote">«Все про меня, предлагаю, чтобы работодатели видели результаты этих
-                        тестов!!!» 
-                    </div>
-                    <div class="response-item-name">
-                        Светлана Б.
-                    </div>
-                </div>
-
-                <div class="response-item">
-                    <div class="response-item-quote">«Хороший сервис, посоветую знакомым. Возможно, нужно добавить
-                        соответствующие актуальные тренинги в регионе.» 
-                    </div>
-                    <div class="response-item-name">
-                        Антон Б.
-                    </div>
-                </div>
-
-                <div class="response-item">
-                    <div class="response-item-quote">«Спасибо за предоставленную возможность воспользоваться данным
-                        сервисом . Результаты теста мне понятны и вполне соответствую моему представлению о степени
-                        развития моих профессиональных качеств.» 
-                    </div>
-                    <div class="response-item-name">
-                        Кузнецова Света
-                    </div>
-                </div>
-
-                <div class="response-item">
-                    <div class="response-item-quote">«Интересный анализ самого себя со стороны.» </div>
-                    <div class="response-item-name">
-                        Степан Н.
-                    </div>
-                </div>
-
-                <div class="response-item">
-                    <div class="response-item-quote">«Спасибо, интересно, совпадает с реальным положением дел.
-                        Хотелось бы более подробного и развёрнутого ответа и сравнительного анализа
-                        со среднестатистическими величинами по каждому показателю.» 
-                    </div>
-                    <div class="response-item-name">
-                        Марина Б.
-                    </div>
-                </div>
+                <div class="column column_2"></div>
             </div>
+
+            <div class="row">
+                <div class="column column_1"></div>
+                <div class="column column_10">
+                    <div class="content-responses-items">
+                        <div class="response-item">
+                            <div class="response-item-quote">«Очень реалистичный результат и достаточно интересные рекомендации.
+                                В целом сервис полезный, очень правильная идея, и, судя по результатам, 40 минут были потрачены
+                                мной не напрасно. Спасибо и удачи вам в дальнейшем совершенствовании сервиса!» 
+                            </div>
+                            <div class="response-item-name">Надежда К.</div>
+                        </div>
+
+                        <div class="response-item">
+                            <div class="response-item-quote">«Все про меня, предлагаю, чтобы работодатели видели результаты этих
+                                тестов!!!» 
+                            </div>
+                            <div class="response-item-name">
+                                Светлана Б.
+                            </div>
+                        </div>
+
+                        <div class="response-item">
+                            <div class="response-item-quote">«Хороший сервис, посоветую знакомым. Возможно, нужно добавить
+                                соответствующие актуальные тренинги в регионе.» 
+                            </div>
+                            <div class="response-item-name">
+                                Антон Б.
+                            </div>
+                        </div>
+
+                        <div class="response-item">
+                            <div class="response-item-quote">«Спасибо за предоставленную возможность воспользоваться данным
+                                сервисом . Результаты теста мне понятны и вполне соответствую моему представлению о степени
+                                развития моих профессиональных качеств.» 
+                            </div>
+                            <div class="response-item-name">
+                                Кузнецова Света
+                            </div>
+                        </div>
+
+                        <div class="response-item">
+                            <div class="response-item-quote">«Интересный анализ самого себя со стороны.» </div>
+                            <div class="response-item-name">
+                                Степан Н.
+                            </div>
+                        </div>
+
+                        <div class="response-item">
+                            <div class="response-item-quote">«Спасибо, интересно, совпадает с реальным положением дел.
+                                Хотелось бы более подробного и развёрнутого ответа и сравнительного анализа
+                                со среднестатистическими величинами по каждому показателю.» 
+                            </div>
+                            <div class="response-item-name">
+                                Марина Б.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column_4">
+                    <img src="i/responses.svg" alt="Отзывы наших клиентов"/>
+                </div>
+                <div class="column column_1"></div>
         </div>
 
         <div class="partners">
@@ -302,5 +348,6 @@
     </div>
 
 </div>
+<script src="grid.js"></script>
 </body>
 </html>
