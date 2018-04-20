@@ -1,0 +1,17 @@
+.grid {
+    background-image: linear-gradient(to right, transparent calc(15px * 2), rgba(255, 235, 59, 0.4) 1px);
+    background-size: 80px auto;
+    background-position: -15px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: calc(80px * 16);
+    min-width: 320px;
+    display: none;
+}
+
+.grid_visible {
+    display: block;
+}
