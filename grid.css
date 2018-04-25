@@ -15,3 +15,25 @@
 .grid_visible {
     display: block;
 }
+
+@media (max-width: 1340px) {
+    .grid {
+        width: calc(80px * 12);
+    }
+}
+
+@media (max-width: 1020px) {
+    .grid {
+        width: calc(80px * 8);
+    }
+}
+
+@media (max-width: 700px) {
+    .grid {
+        background-image: linear-gradient(to right, transparent 30px, rgba(255, 235, 59, 0.4) 1px);
+        background-size: 25%;
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
+    }
+}
